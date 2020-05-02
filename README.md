@@ -7,7 +7,7 @@ This is a project to practice using Python and other software development tools.
 * Homepage
 * About
 * Categories
-** Learning journal
-** Recipes
-** Photography
-** Drawing
+  * Learning journal
+  * Recipes
+  * Photography
+  * Drawing
