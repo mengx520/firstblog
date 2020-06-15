@@ -12,3 +12,7 @@ def about():
 @app.route('/recipe')
 def recipe():
 	return 'Recipe'
+
+@app.route('/hello/<name>')
+def hello(name):
+	return 'Hello ' + name
