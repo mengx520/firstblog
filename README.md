@@ -15,3 +15,7 @@ This is a project to practice using Python and other software development tools.
   * Recipes
   * Photography
   * Drawing
+
+## Blog Design
+
+![this is the blog design png](https://github.com/mengx520/firstblog/raw/master/blog.png)
