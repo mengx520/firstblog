@@ -12,9 +12,21 @@ def home_page():
 def about():
     return 'About'
 
-@app.route('/recipe')
+@app.route('/learn')
 def recipe():
-    return 'Recipe'
+    return 'Learn'
+
+@app.route('/food')
+def food():
+    return 'Food'
+
+@app.route('/photo')
+def photo():
+    return 'Photo'
+
+@app.route('/art')
+def art():
+    return 'Art'
 
 @app.route('/hello/<name>')
 def hello(name):
