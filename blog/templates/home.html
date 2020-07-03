@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Firstblog</title>
+        <!-- plug in {{ title }} as a template variable to nav bar title -->
+        <title>Firstblog - {{ title }}</title>
         <link rel="stylesheet" href="/static/tachyons.min.css">
     </head>
-    <body class="bg-washed-green dark-gray">
-        <div class="helvetica">
-            <div class="fl w-30 bg-green h4 ba bw1">
-  
-                <h1 class="dark-gray tr pr3 pt4">Name</h1>
+    <body class="bg-washed-green dark-gray helvetica">
+        <div class="fl w-30 bg-green h4 ba bw1">
+            <h1 class="dark-gray tr pr3 pt4"><a href="/" class="link dark-gray">Name</a></h1>
+        </div>
+        <div class="fl w-70 bg-light-green h4 br bt bb bw1">
+            <div class="dark-gray tr pr3 pt5"> 
+                <div class="w-14 mr3 dib"><a href="/about" class="link dark-gray">About</a></div>
+                <div class="w-14 mr3 dib"><a href="/learn" class="link dark-gray">Learn</a></div>
+                <div class="w-14 mr3 dib"><a href="/food" class="link dark-gray">Food</a></div>
+                <div class="w-14 mr3 dib"><a href="/photo" class="link dark-gray">Photo</a></div>
+                <div class="w-14 mr3 dib"><a href="/art" class="link dark-gray">Art</a></div>
             </div>
-            <div class="fl w-70 bg-light-green h4 br bt bb bw1">
-                <div class="dark-gray tr pr3 pt5">
-                    <div class="w-14 mr3 dib">About</div>
-                    <div class="w-14 mr3 dib">Learn</div>
-                    <div class="w-14 mr3 dib">Food</div>
-                    <div class="w-14 mr3 dib">Photo</div>
-                    <div class="w-14 mr3 dib">Art</div>
-                </div>
-            </div>
+        </div>
+        <div class="fl w-100 pa6">
+            <!-- plug in template variable to the main content-->
+            <h1>{{ title }}</h1>
+            <p>{{ content }}</p>
         </div>
     </body>
 </html>
