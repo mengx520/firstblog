@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- plug in {{ title }} as a template variable to nav bar title -->
+        <title>Firstblog - {{ title }}</title>
+        <link rel="stylesheet" href="/static/tachyons.min.css">
+        <link rel="stylesheet" href="/static/custom.css">
+    </head>
+    <body class="bg-washed-blue avenir fw3">
+        <div class="fl w-30 bg-light-green ba bw2">
+            <div class="dark-gray tr pr3 pt3_4 f3 h3"><a href="/" class="link dim dark-gray">XIAOHAN MENG</a></div>
+        </div>
+        <div class="fl bg-washed-green w-70 br bt bb bw2">
+            <div class="dark-gray tr pr3 pt3_4 f4 h3">
+                <div class="w-14 mr3 dib"><a href="/about" class="link dim dark-gray">About</a></div>
+                <div class="w-14 mr3 dib"><a href="/learn" class="link dim dark-gray">Learn</a></div>
+                <div class="w-14 mr3 dib"><a href="/food" class="link dim dark-gray">Food</a></div>
+                <div class="w-14 mr3 dib"><a href="/photo" class="link dim dark-gray">Photo</a></div>
+                <div class="w-14 mr3 dib"><a href="/art" class="link dim dark-gray">Art</a></div>
+            </div>
+        </div>
+        <div class="fl w-100 pa6">
+            {% block content %}
+            <!-- plug in template variable to the main content-->
+            <h1>{{ title }}</h1>
+            <p>{{ content }}</p>
+            {% endblock %}
+        </div>
+    </body>
+</html>
